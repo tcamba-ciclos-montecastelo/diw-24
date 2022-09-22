@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tema 1 - Ejercicio 3</title>
+</head>
+<body>
+  <div class="container">
+  <h1>Formulario de reserva de viajes</h1>
+  <h3>* significa campo obligatorio</h3>
+  <form id="registration_form" method="POST" target="_blank">
+    <label>Nombre completo*:</label><br>
+    <input type="text" name="full_name" placeholder="Nombre Apellidos" autofocus="autofocus" value="" required><br>   
+    <label>Email*:</label><br>
+    <input type="text" name="email_addr" value="" required><br>
+    <label>Selecciona el paquete vacacional* :</label><br>	
+     <select name="package" required>
+    <option value="Goa" >Goa</options>
+    <option value="Kashmir" >Cachemira</options>
+    <option value="Rajasthan" >Rajastán</options>
+     </select><br>
+    <label>Fecha de llegada*:</label><br>
+    <input type="text" name="arv_dt" placeholder="mm/dd/aaaa" value="" required><br>
+          <label>Número de personas*:</label><br>
+    <input type="text" name="persons" value="" required><br>
+       <label>¿Qué extras quieres reservar?*</label> <br> 
+   Facturación<input type="checkbox" name="facilities[]" value="boarding"  ><br>
+   Pension completa<input type="checkbox" name="facilities[]" value="fooding"  ><br>
+   Visitas guiadas<input type="checkbox" name="facilities[]" value="sightseeing"  ><br>
+     <label>Cupón de descuento:</label><br>
+    <input type="text" name="dis_code" value=""><br>
+        <label>Términos y condiciones*</label><br>
+    <input type="radio" name="tnc" value="agree" checked>Acepto
+    <input type="radio" name="tnc" value="disagree" >No Acepto<br>
+    <button type="submit" class="btn btn-large btn-primary" name="submit">Completar reserva</button>
+  </form>
+  </div>
+  </body>
+</html>
