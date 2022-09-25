@@ -1,0 +1,16 @@
+.container {
+  width: 25%;
+  margin: 25% auto;
+}
+
+.box {
+  background-color: lightpink;
+  background-image: url(../assets/imgs/univcat.jpg);
+  background-size: 400px 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: 10px solid lightcoral;
+  height: 200px;
+  padding: 100px;
+}
