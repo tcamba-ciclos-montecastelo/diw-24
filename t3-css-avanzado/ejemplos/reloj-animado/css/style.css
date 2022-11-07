@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+
+    /*40% del ancho del padre -> 40% del ancho del viewport*/
+    width: 40%;
+    /*Relación de aspecto 1:1 -> un cuadrado*/
+    aspect-ratio: 1;
+
+    border: 2px solid black;
+
+    /*Redondeo de las aristas de la caja -> un circulo */
+    border-radius: 50%;
+}
+
+.segs {
+    /*Colocamos la aguja en el centro de la esfera */
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+
+    width: 6px;
+    height: 49%;
+
+    border: 1px solid darkgrey;
+    background-color: darkgrey;
+
+    /*Si quereis que vaya más rápido basta reducir la duración de la animación*/
+    animation: rotate 60s linear infinite;
+}
+
+.mins {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+
+    width: 8px;
+    height: 39%;
+
+    border: 1px solid dimgray;
+    background-color: dimgray;
+
+    animation: rotate 3600s linear infinite;
+}
+
+.horas {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+
+    width: 10px;
+    height: 29%;
+
+    border: 1px solid lightslategrey;
+    background-color: lightslategrey;
+
+    animation: rotate 43200s linear infinite;
+}
+
+@keyframes rotate {
+    /*Tambien podeis usar 0% y 100%*/
+    from {
+        transform: rotateZ(0deg);
+        /*Queremos que las agujas roten sobre un punto en su borde inferior y centrado horizontalmente*/
+        transform-origin: bottom center;
+    }
+
+    to {
+        transform: rotateZ(360deg);
+        transform-origin: bottom center;
+    }
+}
