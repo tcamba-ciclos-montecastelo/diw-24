@@ -1,0 +1,5 @@
+@mixin test($size: 12px) {
+  * {
+    font-size: $size
+  }
+}

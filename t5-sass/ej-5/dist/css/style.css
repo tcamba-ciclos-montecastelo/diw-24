@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #6b6b6b;
+}
+
+h1, h2, h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: black;
+  padding-bottom: 1rem;
+}
+
+h2, h3 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  padding-bottom: 1rem;
+  text-align: justify;
+}
+
+.container {
+  max-width: 768px;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container > * {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.text-primary {
+  color: #009cab;
+}
+
+.text-danger {
+  color: #f04c25;
+}
+
+.text-success {
+  color: #8dab3d;
+}
+
+.text-info {
+  color: #f7ae19;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-gray {
+  color: #a4a4a4;
+}
+
+.text-white {
+  color: white;
+}
+
+.border-primary {
+  border: 1px solid #006d78;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.border-danger {
+  border: 1px solid #d3340f;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.border-success {
+  border: 1px solid #6e8530;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.border-info {
+  border: 1px solid #d69207;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.border-black {
+  border: 1px solid black;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.border-gray {
+  border: 1px solid #8b8b8b;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.border-white {
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.border-width-1 {
+  border-width: 1px;
+}
+.border-width-2 {
+  border-width: 2px;
+}
+.border-width-3 {
+  border-width: 3px;
+}
+.border-width-4 {
+  border-width: 4px;
+}
+.border-width-5 {
+  border-width: 5px;
+}
+.border-width-6 {
+  border-width: 6px;
+}
+.border-width-7 {
+  border-width: 7px;
+}
+.border-width-8 {
+  border-width: 8px;
+}
+.border-width-9 {
+  border-width: 9px;
+}
+.border-width-10 {
+  border-width: 10px;
+}
+.border-radius-25 {
+  border-radius: 0.25rem;
+}
+.border-radius-50 {
+  border-radius: 0.5rem;
+}
+.border-radius-75 {
+  border-radius: 0.75rem;
+}
+.border-radius-100 {
+  border-radius: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
