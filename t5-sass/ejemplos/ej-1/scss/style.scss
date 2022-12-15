@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+
+$fontstack: "Gotu", sans-serif;
+$fontsize: 16px;
+$primary: lightskyblue;
+$primary_dark: darken($primary, 50%);
+
+* {
+  margin: 0;
+  padding: 0;
+
+  color: inherit;
+}
+
+#container {
+  width: 800px;
+  margin: 0 auto;
+
+  font: {
+    family: $fontstack;
+    size: $fontsize;
+  }
+
+  h1 {
+    color: $primary_dark;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+
+      @media screen and (max-width: 625px) {
+        & {
+          flex-direction: column;
+        }
+      }
+
+      li {
+        flex: 1;
+        outline: $primary_dark solid 0.1 * $fontsize;
+        text-align: center;
+        color: $primary_dark;
+
+        background-color: $primary;
+
+        transition: {
+          duration: 1s;
+          property: background-color, color;
+        }
+
+        &:hover {
+          background-color: $primary_dark;
+          color: $primary;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  main {
+    ul {
+      margin-left: $fontsize;
+    }
+  }
+}

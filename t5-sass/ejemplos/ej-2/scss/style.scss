@@ -1,0 +1,33 @@
+$small: 576px;
+$medium: 768px;
+
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+@mixin box-color($color, $size: 14px) {
+  color: $color;
+  background-color: lighten(invert($color), $amount: 20%);
+  font-size: $size;
+  font-family: Verdana sans-serif;
+  color: $color;
+
+  margin: $size;
+  padding: $size;
+  line-height: 1.5 * $size;
+  border: 5px solid $color;
+}
+
+#container {
+  @include box-color(darkred, 16px);
+
+  @media screen and (max-width: $small) {
+    @include box-color(darkblue);
+  }
+
+  @media screen and (min-width: $medium) {
+    @include box-color(darkgreen, 20px);
+  }
+}

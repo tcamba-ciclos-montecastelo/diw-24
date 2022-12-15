@@ -1,0 +1,37 @@
+@use "mixins";
+@use "variables" as *;
+
+body {
+  font: $fontstack-text;
+
+  @media screen and (max-width: $small) {
+    @include mixins.box-color(white, 1rem);
+  }
+
+  @include mixins.box-color(black, 1.25rem);
+
+  article {
+    h1 {
+      font: {
+        family: $fontstack-titles;
+        size: 1.75rem;
+      }
+    }
+
+    p {
+      padding: 1.5rem;
+    }
+  }
+
+  a {
+    display: block;
+    width: 130px;
+    font-family: $fontstack-titles;
+
+    @include mixins.box-color(black, 1rem);
+
+    &:hover {
+      @include mixins.box-color(dimgray, 1rem);
+    }
+  }
+}
