@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrap {
+    width: 800px;
+    margin: 80px auto;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 400px;
+    margin-left: -125px;
+}
+
+.l, .r {
+    width: 388px;
+}
+
+.l {
+    float: left;
+}
+
+.r {
+    float: right;
+}
+
+.l:before, .r:before {
+    content: "";
+    width: 125px;
+    height: 250px;
+}
+
+.l:before {
+    float: right;
+}
+
+.r:before {
+    float: left;
+}
