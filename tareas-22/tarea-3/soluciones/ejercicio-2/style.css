@@ -1,0 +1,129 @@
+body {
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.deck {
+    width: 20vw;
+
+    position: relative;
+    aspect-ratio: 0.75;
+
+    transform-origin: left bottom;
+
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-delay: 1s;
+}
+
+.deck:hover {
+    transform: rotate(-35deg);
+}
+
+.card {
+    width: inherit;
+    height: inherit;
+
+    position: absolute;
+
+    transform-origin: left bottom;
+}
+
+.card img {
+    width: inherit;
+    height: inherit;
+}
+
+.card:hover {
+    outline: 3px solid darkred;
+}
+
+.card:active {
+    z-index: 100;
+    width: calc(1.2 * 20vw);
+}
+
+.deck:hover .card:nth-child(1) {
+    transform: rotate(calc(-160 / 7 * 3deg));
+
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-delay: 1s;
+}
+
+.deck:hover .card:nth-child(1):hover {
+    transform: rotate(calc(-160 / 7 * 3deg));
+}
+
+.deck:hover .card:nth-child(2) {
+    transform: rotate(calc(-160 / 7 * 2deg));
+
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-delay: 1.2s;
+}
+
+.deck:hover .card:nth-child(2):hover {
+    transform: rotate(calc(-160 / 7 * 2deg));
+}
+
+.deck:hover .card:nth-child(3) {
+    transform: rotate(calc(-160 / 7 * 1deg));
+
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-delay: 1.4s;
+}
+
+.deck:hover .card:nth-child(3):hover {
+    transform: rotate(calc(-160 / 7 * 1deg));
+}
+
+.deck:hover .card:nth-child(3) {
+rotate(calc(- 160 / 7 * 0 deg));
+
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-delay: 1.6s;
+}
+
+.deck:hover .card:nth-child(5) {
+    transform: rotate(calc(160 / 7 * 1deg));
+
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-delay: 1.8s;
+}
+
+.deck:hover .card:nth-child(5):hover {
+    transform: rotate(calc(160 / 7 * 1deg));
+}
+
+.deck:hover .card:nth-child(6) {
+    transform: rotate(calc(160 / 7 * 2deg));
+
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-delay: 2s;
+
+}
+
+.deck:hover .card:nth-child(6):hover {
+    transform: rotate(calc(160 / 7 * 2deg));
+}
+
+.deck:hover .card:nth-child(7) {
+    transform: rotate(calc(160 / 7 * 3deg));
+
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-delay: 2.2s;
+}
+
+.deck:hover .card:nth-child(7):hover {
+    transform: rotate(calc(160 / 7 * 3deg));
+}

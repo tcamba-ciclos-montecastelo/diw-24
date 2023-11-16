@@ -1,0 +1,27 @@
+// fonts
+$font-size: 14px;
+$line-height: 1.5;
+
+$ff-arial: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$ff-lato: 'Lato', sans-serif;
+
+// colors
+$blue: #009cab;
+$red: #f04c25;
+$orange: #f7ae19;
+$green: #8dab3d;
+$black: black;
+$gray: #a4a4a4;
+$darkgray: #6b6b6b;
+$white: white;
+
+$color-map: (
+  //key: value
+        'primary': $blue,
+        'danger': $red,
+        'success': $green,
+        'info': $orange,
+        'black': $black,
+        'gray': $gray,
+        'white': $white
+);

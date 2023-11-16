@@ -1,0 +1,23 @@
+body {
+    width: 100vw;
+    height: 90vh;
+
+    position: relative;
+}
+
+.transitionable {
+    position: absolute;
+
+    font-size: 30px;
+    color: black;
+    background-color: lightcoral;
+
+    transition-property: font-size,color,background-color,height;
+    transition-duration: 10s;
+}
+
+.transitionable:hover {
+    font-size: 60px;
+    color: blue;
+    background-color: green;
+}

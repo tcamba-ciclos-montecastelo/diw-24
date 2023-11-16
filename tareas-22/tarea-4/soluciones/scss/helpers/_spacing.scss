@@ -1,0 +1,49 @@
+/* --------------------------- PADDING CLASSES ---------------------------- */
+@for $i from 0 through 5 {
+  .p-#{$i} {
+    padding: calc($i / 3) rem;
+  }
+  .px-#{$i} {
+    padding: 0rem calc($i / 3) rem;
+  }
+  .py-#{$i} {
+    padding: calc($i / 3) rem 0rem;
+  }
+  .pt-#{$i} {
+    padding-top: calc($i / 3) rem;
+  }
+  .pr-#{$i} {
+    padding-right: calc($i / 3) rem;
+  }
+  .pb-#{$i} {
+    padding-bottom: calc($i / 3) rem;
+  }
+  .pl-#{$i} {
+    padding-left: calc($i / 3) rem;
+  }
+}
+
+/* --------------------------- MARGIN CLASSES ------------------------------- */
+@for $i from 0 through 5 {
+  .m-#{$i} {
+    margin: calc($i / 3) rem;
+  }
+  .mx-#{$i} {
+    margin: 0rem calc($i / 3) rem;
+  }
+  .my-#{$i} {
+    margin: calc($i / 3) rem 0rem;
+  }
+  .mt-#{$i} {
+    margin-top: calc($i / 3) rem;
+  }
+  .mr-#{$i} {
+    margin-right: calc($i / 3) rem;
+  }
+  .mb-#{$i} {
+    margin-bottom: calc($i / 3) rem;
+  }
+  .ml-#{$i} {
+    margin-left: calc($i / 3) rem;
+  }
+}

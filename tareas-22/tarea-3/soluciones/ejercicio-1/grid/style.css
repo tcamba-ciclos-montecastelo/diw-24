@@ -1,0 +1,58 @@
+.container {
+    display: grid;
+    height: 90vh;
+    grid-template-areas:
+    "a a a a    a a a a    a a a a"
+
+    "b b b b    b b b b    e e e e"
+    "b b b b    b b b b    e e e e"
+
+    "c c c c    d d d d    e e e e";
+
+    grid-gap: 20px;
+
+    padding: 1vh;
+}
+
+.box {
+    border: 1px solid black;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1 {
+    grid-area: a;
+}
+
+.box-2 {
+    grid-area: b;
+}
+
+.box-3 {
+    grid-area: c;
+}
+
+.box-4 {
+    grid-area: d;
+}
+
+.box-5 {
+    grid-area: e;
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        grid-template-areas:
+
+    "a a a a    a a a a    a a a a"
+
+    "b b b b    b b b b    b b b b"
+    "b b b b    b b b b    b b b b"
+
+    "c c c c    c c d d    d d d d"
+    "e e e e    e e e e    e e e e";
+    }
+}
