@@ -1,0 +1,42 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+    color: white;
+}
+
+nav {
+    padding: 15px 10px;
+    font-size: 40px;
+    background-color: #222222;
+    height: 15vh;
+}
+
+article {
+    background-image: url("assets/imgs/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 20%;
+    text-align: center;
+}
+
+.lorem {
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+.expbutton {
+    padding: 12px;
+    background-color: rgba(0,0,0,0);
+    border: white solid 1px;
+    margin-top: 10px;
+    width: 15vw;
+}

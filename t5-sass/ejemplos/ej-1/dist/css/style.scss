@@ -1,0 +1,128 @@
+@use 'sass:color';
+
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+
+@function darken($color) {
+    $darker: color.scale($color, $lightness: -50%);
+    @return $darker;
+}
+
+$fontstack: Gotu, sans;
+$fontsize: 16px;
+
+$primary: aquamarine;
+$primary_dark: darken($primary);
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+    padding: 5px;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+h1 {
+    color: $primary_dark;
+}
+
+body {
+
+  #container {
+    width: 100vw;
+    max-width: 800px;
+    margin: 0 auto;
+
+    main {
+      ul {
+        list-style-position: inside;
+      }
+    }
+
+    nav {
+      ul {
+        width: 100%;
+        display: flex;
+
+        li {            
+          flex: 1;
+          list-style: none;
+          background-color: $primary;
+          outline: $primary_dark solid 2px;
+
+          text-align: center;
+
+          &:hover {
+            transition: {
+              property: color, background-color;
+              duration: 1s;
+            }
+
+            font-weight: bold;
+            
+            background-color: $primary_dark;
+
+            a {
+              color: $primary;
+            }
+
+          }
+          
+          a {
+            color: $primary_dark;
+            text-decoration: none;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #container nav ul {
+      flex-direction: column;
+  }  
+}
+
+
+

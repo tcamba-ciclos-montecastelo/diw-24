@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+.container {
+    width: 100vw;
+    height: 90vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.esfera {
+    position: relative;
+    width: 40%;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    border: black solid 2px;
+}
+
+.secs {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+
+    width: 4px;
+    height: 40%;
+
+    border: red solid 1px;
+
+    animation-name: rotation;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.mins {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+
+    width: 4px;
+    height: 30%;
+
+    border: blue solid 1px;
+
+    animation-name: rotation;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.hours {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+
+    width: 4px;
+    height: 20%;
+
+    border: green solid 1px;
+
+    animation-name: rotation;
+    animation-duration: 240s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateZ(0deg);
+        transform-origin: bottom center;
+    }
+
+    to {
+        transform: rotateZ(360deg);
+        transform-origin: bottom center;
+    }
+}
