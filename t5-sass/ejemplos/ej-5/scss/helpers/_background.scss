@@ -1,0 +1,11 @@
+@use "../variables" as v;
+@use "sass:color";
+
+@each $key, $value in v.$color-map {
+  @for $i from 0 through 10 {
+    $x: $i * 10;
+    .bg-#{$key}-#{$x} {
+      background-color: color.adjust($value, $alpha: calc($x / 100));
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@mixin frame(
+    $thickness, 
+    $style: solid, 
+    $color-border: #000, 
+    $color-bg: #eee, 
+    $padding: 10px, 
+    $radius: 15px) {
+
+    &:hover {
+        box-shadow: 5px 5px 10px rgba($color: black, $alpha: 0.75);
+    }
+
+    border: $thickness $style $color-border;
+    border-radius: $radius;
+    background-color: $color-bg;
+    padding: $padding;
+}

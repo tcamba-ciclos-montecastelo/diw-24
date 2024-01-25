@@ -1,0 +1,116 @@
+* {
+    max-width: 960px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 60px;
+}
+
+.product {
+    border: 4px solid #000000;
+}
+
+header {
+    background-color: #f7f7f7;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 25px;
+    font-weight: 640;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+header::before {
+    content: "SALE";
+    position: absolute;
+    background-color: #ec2f2f;
+    color: #fffafa;
+    padding: 10px;
+    width: 60px;
+    letter-spacing: 1.5px;
+    bottom: 55px;
+    right: 790px;
+}
+
+img {
+    width: 250px;
+    height: auto;
+}
+
+.price p:nth-child(1) {
+    font-size: 25px;
+    font-weight: 650;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.price p:nth-child(2) {
+    font-size: 13px;
+    margin-top: 0;
+    color: #7f7f7f;
+}
+
+.description p {
+    margin-bottom: 0;
+}
+
+.description a {
+    margin-top: 0;
+    text-decoration: 1px underline;
+    color: #000000;
+}
+
+.colors div {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.colors div:nth-child(1) {
+    background-color: #000000;
+}
+
+.colors div:nth-child(2) {
+    background-color: #2f6ee2;
+}
+
+.colors div:nth-child(3) {
+    background-color: #ec2f2f;
+}
+
+.colors div:nth-child(4) {
+    background-color: #f0bf1e;
+}
+
+.colors div:nth-child(5) {
+    background-color: #90cc20;
+}
+
+.colors div:nth-child(6) {
+    background-color: #885214;
+}
+
+.details ul {
+    padding-left: 20px;
+}
+
+.details li {
+    margin-bottom: 10px;
+    list-style-type: square;
+}
+
+.cart {
+    background-color: #000000;
+    color: #ffffff;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+}

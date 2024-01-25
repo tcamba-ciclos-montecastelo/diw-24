@@ -1,0 +1,8 @@
+@use "../variables" as v;
+
+// .text-primary, .text-danger, ...
+@each $key, $value in v.$color-map {
+  .text-#{$key} {
+    color: $value;
+  }
+}

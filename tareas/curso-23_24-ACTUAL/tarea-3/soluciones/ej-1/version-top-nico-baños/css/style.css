@@ -1,0 +1,574 @@
+* {
+    caret-color: transparent;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(240, 240, 240);
+}
+
+/* CORREA DEL RELOJ */
+.correa {
+    position: relative;
+    width: 325px;
+    height: 90vh;
+    background-color: rgb(30, 30, 30);
+    border-radius: 11%;
+
+}
+
+/* COSTURAS DE LA CORREA DEL RELOJ */
+
+.costura {
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background-color: rgb(210, 210, 210);
+    border-radius: 1rem;
+}
+
+.c1 {
+    left: 10%;
+    top: 0%;
+}
+
+.c2 {
+    left: 10%;
+    top: 4%;
+}
+
+.c3 {
+    left: 10%;
+    top: 8%;
+}
+
+.c4 {
+    left: 10%;
+    top: 12%;
+}
+
+.c5 {
+    left: 10%;
+    top: 16%;
+}
+
+.c6 {
+    left: 10%;
+    top: 78%;
+}
+
+.c7 {
+    left: 10%;
+    top: 82%;
+}
+
+.c8 {
+    left: 10%;
+    top: 86%;
+}
+
+.c9 {
+    left: 10%;
+    top: 90%;
+}
+
+.c10 {
+    left: 10%;
+    top: 94%;
+}
+
+.c11 {
+    left: 10%;
+    top: 98%;
+}
+
+.c12 {
+    left: 90%;
+    top: 0%;
+}
+
+.c13 {
+    left: 90%;
+    top: 4%;
+}
+
+.c14 {
+    left: 90%;
+    top: 8%;
+}
+
+.c15 {
+    left: 90%;
+    top: 12%;
+}
+
+.c16 {
+    left: 90%;
+    top: 16%;
+}
+
+.c17 {
+    left: 90%;
+    top: 78%;
+}
+
+.c18 {
+    left: 90%;
+    top: 82%;
+}
+
+.c19 {
+    left: 90%;
+    top: 86%;
+}
+
+.c20 {
+    left: 90%;
+    top: 90%;
+}
+
+.c21 {
+    left: 90%;
+    top: 94%;
+}
+
+.c22 {
+    left: 90%;
+    top: 98%;
+}
+
+/* RELOJ PRINCIPAL */
+
+.reloj {
+    display: flex;
+    background: #272727;
+    border: 15px solid #000000;
+    border-radius: 50%;
+    left: -150px;
+    top: 95px;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    position: relative;
+    z-index: 1;
+}
+
+.hora,
+.minuto,
+.centro,
+.segundo,
+.marca {
+    position: absolute;
+    transform-origin: 50% 100%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+/* SALIENTE LATERAL CON SU "BOTÓN" */
+
+.saliente {
+    position: absolute;
+    width: 3.5%;
+    height: 5%;
+    background-color: #000000;
+    top: 47.5%;
+    left: 100%;
+    border-radius: 10%;
+}
+
+.boton {
+    position: absolute;
+    width: 0.5%;
+    height: 3%;
+    background-color: #B71D1C;
+    top: 48.5%;
+    left: 103.5%;
+}
+
+/*   MARCA DEL RELOJ  */
+
+.marca {
+    color: #f6f6f6;
+    width: 25%;
+    height: auto;
+    top: 30%;
+    left: 35%;
+    border-radius: 50%;
+    margin-left: 0;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.marca>img {
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+}
+
+.marca>p {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+}
+
+/*  AGUJAS Y SU CENTRO  */
+
+.hora {
+    width: 4px;
+    height: 210px;
+    top: 90px;
+    left: 297.5px;
+    margin-left: 0;
+    animation: rotar 7200s linear infinite;
+    background-color: white;
+    border: px solid #f6f6f6;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 25%;
+}
+
+.minuto {
+    width: 1px;
+    height: 265px;
+    top: 35px;
+    left: 298.5px;
+    margin-left: 0;
+    animation: rotar 600s steps(60, end) infinite;
+    background-color: #f6f6f6;
+    border: 1px solid #f6f6f6;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+.segundo {
+    width: 3px;
+    height: 330px;
+    top: 35px;
+    left: 299px;
+    margin-left: 0;
+    animation: rotar 10s steps(60, end) infinite;
+    background-color: #B71D1C;
+    ;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    transform-origin: 50% 80%;
+    transform: translateY(-50%);
+}
+
+.centro {
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 290px;
+    border-radius: 50%;
+    margin-left: 0;
+    background-color: #f6f6f6;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* EXPLICACION DE LOS TIEMPOS DE LAS AGUJAS QUE HE ELEGIDO */
+
+.explicacion {
+    position: absolute;
+    left: -75%;
+    color: rgb(0, 0, 0);
+}
+
+/* RAYAS DECORATIVAS */
+
+.raya {
+    width: 0.5%;
+    height: 4%;
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #f6f6f6;
+    transform-origin: 0% 0%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.raya-12 {
+    top: 7% !important;
+    left: 49.75% !important;
+    transform: rotate(0deg);
+}
+
+.raya-1 {
+    transform: rotate(30deg);
+    top: 13.5% !important;
+    left: 71% !important;
+}
+
+.raya-2 {
+    transform: rotate(60deg);
+    top: 28.5% !important;
+    left: 86.5% !important;
+}
+
+.raya-3 {
+    transform: rotate(90deg);
+    top: 49.5% !important;
+    left: 92% !important;
+}
+
+.raya-4 {
+    top: 71% !important;
+    left: 87% !important;
+    transform: rotate(120deg);
+}
+
+.raya-5 {
+    top: 86.5% !important;
+    left: 71% !important;
+    transform: rotate(150deg);
+}
+
+.raya-6 {
+    top: 88.5% !important;
+    left: 49.75% !important;
+    transform: rotate(0deg);
+}
+
+.raya-7 {
+    top: 86.5% !important;
+    left: 30% !important;
+    transform: rotate(210deg);
+}
+
+.raya-8 {
+    transform: rotate(240deg);
+    top: 71.5% !important;
+    left: 13% !important;
+}
+
+.raya-9 {
+    transform: rotate(270deg);
+    top: 50% !important;
+    left: 8% !important;
+}
+
+.raya-10 {
+    top: 29.5% !important;
+    left: 13.5% !important;
+    transform: rotate(300deg);
+}
+
+.raya-11 {
+    transform: rotate(330deg);
+    top: 13.5% !important;
+    left: 28.5% !important;
+}
+
+/* NUMEROS */
+
+.numero {
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    transform-origin: 50% 0%;
+    transform: translateY(-50%) translateX(-50%);
+    color: #f6f6f6;
+}
+
+.doce {
+    top: 5% !important;
+    left: 50% !important;
+}
+
+.seis {
+    top: 95% !important;
+    left: 50% !important;
+}
+
+.nueve {
+    top: 49.5% !important;
+    left: 5% !important;
+}
+
+.tres {
+    top: 49.5% !important;
+    left: 95% !important;
+}
+
+.dos {
+    top: 28% !important;
+    left: 89% !important;
+}
+
+.ocho {
+    top: 72% !important;
+    left: 11% !important;
+}
+
+.cuatro {
+    top: 72% !important;
+    left: 89% !important;
+}
+
+.diez {
+    top: 28% !important;
+    left: 11% !important;
+}
+
+.una {
+    top: 11% !important;
+    left: 72% !important;
+}
+
+.siete {
+    top: 89% !important;
+    left: 28% !important;
+}
+
+.cinco {
+    top: 89% !important;
+    left: 72% !important;
+}
+
+.once {
+    top: 11% !important;
+    left: 28% !important;
+}
+
+/* SUBRELOJ DÍA/NOCHE*/
+
+.subreloj {
+    display: flex;
+    background-size: 100%;
+    background-position: 0%;
+    border: 1px solid #f6f6f6;
+    border-radius: 50%;
+    top: 50%;
+    left: 330px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+}
+
+.subreloj>img {
+    transform: rotate(320deg);
+}
+
+.subreloj-numero {
+    position: absolute;
+    font-size: 8px;
+    font-weight: bold;
+    color: black;
+    transform-origin: 50% 0%;
+    transform: translateY(-50%) translateX(-50%);
+    color: #f6f6f6;
+}
+
+.subreloj-24 {
+    top: 5% !important;
+    left: 50% !important;
+}
+
+.subreloj-12 {
+    top: 95% !important;
+    left: 50% !important;
+}
+
+.subreloj-18 {
+    top: 50% !important;
+    left: 5% !important;
+}
+
+.subreloj-6 {
+    top: 50% !important;
+    left: 95% !important;
+}
+
+.subreloj-4 {
+    top: 28% !important;
+    left: 89% !important;
+}
+
+.subreloj-16 {
+    top: 72% !important;
+    left: 11% !important;
+}
+
+.subreloj-8 {
+    top: 72% !important;
+    left: 89% !important;
+}
+
+.subreloj-20 {
+    top: 28% !important;
+    left: 11% !important;
+}
+
+.subreloj-2 {
+    top: 11% !important;
+    left: 72% !important;
+}
+
+.subreloj-14 {
+    top: 89% !important;
+    left: 28% !important;
+}
+
+.subreloj-10 {
+    top: 89% !important;
+    left: 72% !important;
+}
+
+.subreloj-22 {
+    top: 11% !important;
+    left: 28% !important;
+}
+
+.tapa {
+    position: absolute;
+
+    width: 70px;
+    height: 125px;
+    top: 12.5px;
+    left: 75px;
+    margin-left: 0;
+    animation: rotar 60s linear infinite;
+    transform-origin: 0% 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: #272727;
+    border-radius: 0px 100px 100px 0;
+}
+
+.subreloj-hora {
+    width: 2px;
+    height: 60px;
+    top: 15px;
+    left: 50%;
+    margin-left: 0;
+    animation: rotar 60s linear infinite;
+    background-color: #B71D1C;
+    position: absolute;
+    transform-origin: 50% 100%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.subreloj-centro {
+    width: 10px;
+    height: 10px;
+    top: 70px;
+    left: 70px;
+    border-radius: 50%;
+    margin-left: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+}

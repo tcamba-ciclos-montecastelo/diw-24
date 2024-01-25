@@ -1,0 +1,9 @@
+@use "sass:color";
+@use "../variables" as v;
+@use "../mixins/colorbox" as cb;
+
+@each $class, $color in v.$color-map {
+  .box-#{$class} {
+    @include cb.color-box($color);
+  }
+}

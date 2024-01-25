@@ -1,0 +1,16 @@
+@use "sass:color";
+@use "../variables" as v;
+
+@mixin color-box($color) {
+  $lightness: lighten($color, 90%);
+  $bg-color: rgba($color, 0.15);
+
+  & {
+    color: $color;
+    background-color: $bg-color;
+    border: solid 1px $lightness;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.25rem;
+  }
+}

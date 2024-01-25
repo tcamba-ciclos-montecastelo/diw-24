@@ -1,0 +1,53 @@
+@use "../variables" as v;
+
+$spacers: (
+  "p": "padding",
+  "m": "margin",
+);
+
+@for $i from 0 to 5 {
+  $x: ($i/3) rem;
+  @each $sp, $value in $spacers {
+    .#{$sp}-#{$i} {
+      #{$value}: $x;
+    }
+
+    .#{$sp}x-#{$i} {
+      #{$value}: {
+        left: $x;
+        right: $x;
+      }
+    }
+
+    .#{$sp}x-#{$i} {
+      #{$value}: {
+        top: $x;
+        bottom: $x;
+      }
+    }
+
+    .#{$sp}t-#{$i} {
+      #{$value}: {
+        top: $x;
+      }
+    }
+
+    .#{$sp}b-#{$i} {
+      #{$value}: {
+        bottom: $x;
+      }
+    }
+
+    .#{$sp}r-#{$i} {
+      #{$value}: {
+        right: $x;
+      }
+    }
+
+    .pl-#{$i} {
+      #{$value}: {
+        left: $x;
+      }
+    }
+  }
+}
