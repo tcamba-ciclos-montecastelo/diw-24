@@ -167,3 +167,5 @@ fabric.properties
 *.sass.map
 *.scss.map
 
+### Exclusions
+.exclude/
