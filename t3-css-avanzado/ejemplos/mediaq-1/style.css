@@ -1,0 +1,92 @@
+.container1 {
+  width: 75vw;
+  height: 75vh;
+  background-color: lightblue;
+  border: 1px solid black;
+
+  display: grid;
+  gap: 10px;
+  grid-template-areas: 
+    "h"
+    "n"
+    "m"
+    "m"
+    "m"
+    "m"
+    "s"
+    "a"
+    "f";
+}
+
+.item {
+  text-align: center;  
+  background-color: salmon;
+  border: 1px solid black;
+  align-content: center;;
+}
+
+.h {
+  grid-area: h;
+}
+
+.n {
+  grid-area: n;
+}
+
+.m {
+  grid-area: m;
+}
+
+.s {
+  grid-area: s;
+}
+
+.a {
+  grid-area: a;
+}
+
+.f {
+  grid-area: f;
+}
+
+.transitionable {
+  font-size: 40px;
+
+  transition: font-size 1s linear,
+              background-color 1s linear,
+              font-family 1s linear;
+}
+
+.transitionable:hover {
+  font-size: 60px;
+  background-color: aquamarine;
+  font-family: sans-serif;
+}
+
+@media screen and (min-width: 720px) {
+  .container1 {
+    gap: 10px;
+    grid-template-areas: 
+      "h h h h h"
+      "n n n n n"
+      "s m m m m"
+      "s m m m m"
+      "s m m m m"
+      "s m m m m"
+      "a a f f f";
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .container1 {
+    gap: 10px;
+    grid-template-areas: 
+      "h h h h h h h"
+      "s s n n n a a"
+      "s s m m m a a"
+      "s s m m m a a"
+      "s s m m m a a"
+      "s s m m m a a"
+      "f f f f f f f";
+  }
+}

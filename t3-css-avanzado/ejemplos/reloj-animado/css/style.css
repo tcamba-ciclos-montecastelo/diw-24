@@ -41,7 +41,7 @@ body {
     background-color: darkgrey;
 
     /*Si quereis que vaya más rápido basta reducir la duración de la animación*/
-    animation: rotate 60s linear infinite;
+    animation: rotate 6s linear infinite;
 }
 
 .mins {
@@ -55,7 +55,7 @@ body {
     border: 1px solid dimgray;
     background-color: dimgray;
 
-    animation: rotate 3600s linear infinite;
+    animation: rotate 360s linear infinite;
 }
 
 .horas {
@@ -69,7 +69,7 @@ body {
     border: 1px solid lightslategrey;
     background-color: lightslategrey;
 
-    animation: rotate 43200s linear infinite;
+    animation: rotate 4320 linear infinite;
 }
 
 @keyframes rotate {

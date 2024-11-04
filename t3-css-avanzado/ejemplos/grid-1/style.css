@@ -1,0 +1,43 @@
+.container1 {
+  width: 75vw;
+  height: 75vh;
+  background-color: lightblue;
+  border: 1px solid black;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px 20px; 
+}
+
+.item {
+  text-align: center;  
+  background-color: salmon;
+  border: 1px solid black;
+  align-content: center;
+}
+
+.A {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+.B {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.C {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.D {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.E {
+  grid-column: 3;
+  grid-row: 2 / span 2;
+}

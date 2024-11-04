@@ -1,0 +1,37 @@
+.container1 {
+  width: 75vw;
+  height: 75vh;
+  background-color: lightblue;
+  border: 1px solid black;
+
+  display: grid;
+  
+  grid-template-areas: 
+    "h h h h"
+    "m m . s"
+    "f f f f";
+}
+
+
+.item {
+  text-align: center;  
+  background-color: salmon;
+  border: 1px solid black;
+  align-content: center;
+}
+
+.h {
+  grid-area: h;
+}
+
+.m {
+  grid-area: m;
+}
+
+.s {
+  grid-area: s;
+}
+
+.f {
+  grid-area: f;
+}

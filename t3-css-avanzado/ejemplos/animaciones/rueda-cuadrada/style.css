@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {  
+  padding:75px;
+  
+  width: 50vw;
+}
+
+.square {
+  width: 250px;
+  height: 250px;
+  
+  background-color: lightskyblue;
+  border: 1px solid grey;
+
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-fill-mode: none;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+
+.square:hover {
+  animation-play-state: running;
+}
+
+.roof {
+  border-top: 5px;  
+  background-color: lightgrey;
+   
+  height: 200px;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px) rotateZ(0deg);      
+  }
+  
+  10% {
+    transform: translate(71.21px, -53px) rotateZ(45deg);
+  }
+  
+  20% {
+    transform: translate(calc(2*71.21px), 0px) rotateZ(90deg);
+  }
+  
+  30% {
+    transform: translate(calc(3*71.21px), -53px) rotateZ(135deg);
+  }
+  
+  40% {
+    transform: translate(calc(4*71.21px), 0px) rotateZ(180deg);
+  }
+  
+  50% {
+    transform: translate(calc(5*71.21px), -53px) rotateZ(225deg);
+  }
+  
+  60% {
+    transform: translate(calc(6*71.21px), 0px) rotateZ(270deg);
+  }
+  
+  70% {
+    transform: translate(calc(7*71.21px), -53px) rotateZ(315deg);
+  }
+  
+  80% {
+    transform: translate(calc(8*71.21px), 0px) rotateZ(360deg);
+  }
+}
+
