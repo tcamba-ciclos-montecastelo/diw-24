@@ -1,0 +1,22 @@
+._header {
+  border: 2px solid black;
+  background-color: aliceblue;
+}
+
+._main {
+  border: 2px solid black;
+  background-color: lightcoral;
+}
+
+._footer {
+  border: 2px solid black;
+  background-color: lightgrey;
+}
+
+._nav {
+  border: 2px solid black;
+}
+
+._content {
+  border: 2px solid black;
+}
