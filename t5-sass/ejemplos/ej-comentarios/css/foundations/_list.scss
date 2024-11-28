@@ -1,0 +1,18 @@
+ul, ol {
+  text-align: left;
+
+  & & {
+    padding: {
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+@function div($a, $b) {
+  @if $b <= 0 {
+    @error "No se puede dividir entre 0"
+  }
+
+  @return $a/$b
+}

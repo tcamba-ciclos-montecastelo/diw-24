@@ -1,0 +1,12 @@
+.box {
+    border: 1px solid red;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+/* Le pongo un tamaño minimo para que la d sea mas grande */
+.box-d {
+    min-height: 200px; 
+}
+

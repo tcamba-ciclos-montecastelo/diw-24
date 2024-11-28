@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid"> <!-- container - fluid es para que ocupe toda la zona de la pantalla no importa si es grande o pequeña -->
+    <!-- Para moviles  -->
+    <div class="row d-flex d-md-none"> <!-- row d flex, para que los elementos sean flexibles y la clase d-md-none sirve para ocultar el contenido para las pantallas medianas y grandes   -->
+        <div class="col-12 box">A</div>
+        <div class="col-12 box">B</div>
+        <div class="col-12 box box-d">D</div> <!-- añadimos clase box-d para poder dar le mas tamaño  y en el style lo trabajo mas -->
+        <div class="col-12 box">C</div>
+        <div class="col-12 box">E</div>
+        <div class="col-12 box">F</div>
+</div>
+<div class="row d-none d-md-flex d-lg-none"> <!-- mostrar solo en Tablets  -->
+    <div class="col-12 box">A</div>
+    <div class="col-12 box">B</div>
+    <div class="col-3 box">C</div> 
+    <div class="col-9 box box-d">D</div> 
+    <div class="col-3 box">E</div> 
+    <div class="col-9 box">F</div> 
+</div>
+</div>
+
+<div class="row">
+    <div class="col-12 box box-a">A</div>
+</div>
+
+
+<div class="row row-middle">
+    <div class="col-3 box">C</div> 
+    <div class="col-6">
+        <div class="box box-b">B</div> 
+        <div class="box box-d">D</div> 
+    </div>
+    <div class="col-3 box">E</div> 
+</div>
+
+
+<div class="row">
+    <div class="col-12 box box-f">F</div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

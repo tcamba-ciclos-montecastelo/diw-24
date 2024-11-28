@@ -1,0 +1,5 @@
+@use "foundations/list";
+
+p {
+  font-size: list.div(3, 0)
+}
