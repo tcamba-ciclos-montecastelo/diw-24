@@ -1,0 +1,7 @@
+@use 'sass:color';
+
+$fontstack: Gotu, sans-serif;
+$fontsize: 16px;
+
+$primary: lightskyblue;
+$primary_dark: color.scale($primary, $lightness: -70%);

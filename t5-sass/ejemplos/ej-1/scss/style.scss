@@ -1,0 +1,77 @@
+@use "foundations/reboot";
+@use "foundations/variables" as v;
+
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  max-width: 800px;  
+  height: 80vh;
+}
+
+nav {
+  background: {
+    color: v.$primary;
+  };  
+
+  ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    border-right: none;
+    
+    @media screen and (max-width: 650px)  {
+      flex-direction: column;
+    }
+
+    li {      
+      height: 15vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;      
+      border: 0.15*v.$fontsize solid v.$primary_dark;   
+
+      a {        
+        text-decoration: none;
+
+        &:visited {
+          color: v.$primary_dark;
+        }        
+      }
+
+      &:hover {
+        background-color: v.$primary_dark; 
+
+        transition: {
+          property: color background-color;
+          duration: 1s;
+        }
+        
+        a {
+          color: v.$primary;
+        }
+      }
+    }
+  }
+}
+
+main {
+  h1 {
+    color: v.$primary_dark;
+  }
+
+  ul {
+    list-style-position: inside;
+
+    li {
+      padding-bottom: 1rem;
+    }
+  }
+}

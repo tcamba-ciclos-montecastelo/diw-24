@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul[role=list], ol[role=list] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img, picture, svg, video, canvas {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
+}
+body, html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  max-width: 800px;
+  height: 80vh;
+}
+
+nav {
+  background-color: lightskyblue;
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  border-right: none;
+}
+@media screen and (max-width: 650px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+nav ul li {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 2.4px solid #05466f;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li a:visited {
+  color: #05466f;
+}
+nav ul li:hover {
+  background-color: #05466f;
+  transition-property: color background-color;
+  transition-duration: 1s;
+}
+nav ul li:hover a {
+  color: lightskyblue;
+}
+
+main h1 {
+  color: #05466f;
+}
+main ul {
+  list-style-position: inside;
+}
+main ul li {
+  padding-bottom: 1rem;
+}/*# sourceMappingURL=style.css.map */
